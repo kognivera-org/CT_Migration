@@ -10,24 +10,25 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//To verify the response of the system when an extra field is passed as part of the  request header
-authResponse = WS.sendRequest(findTestObject('Postman/Postman/Auth', [('host') : GlobalVariable.host]))
+logoutResponse = WS.sendRequest(findTestObject('Postman/Postman/Logout'))
 
-if (WS.getResponseStatusCode(authResponse) == 200) {
-    KeywordUtil.markPassed('Validation happened when an extra field is passed as part of the  request header')
+assert WS.getResponseStatusCode(logoutResponse) == 200
+
+println(logoutResponse.getResponseBodyContent())
+
+String res = WS.getElementText(logoutResponse, 'success')
+
+if (res == 'true') {
+	KeywordUtil.markPassed("Successfully logged out")
+	println(logoutResponse.getResponseBodyContent())
 } else {
-    KeywordUtil.markFailed('Validation failed ')
-
-    println('The Response is ')
-
-    println(authResponse.getResponseBodyContent())
+	KeywordUtil.markFailed("Failed to validate.")
 }
-

@@ -18,15 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //To verfiy the system response when invalid endpoint is provided
-GlobalVariable.host = 'http://34.31.57.114:8080/se'
-
+GlobalVariable.host = GlobalVariable.host+'/se'
+ 
 authResponse = WS.sendRequest(findTestObject('Postman/Postman/AuthService-Valid Header'))
-
+ 
 println(authResponse.getResponseBodyContent())
-
+ 
 assert WS.getResponseStatusCode(authResponse) == 404
-
+ 
 print(('Status code is ' + '404') + ' Validation is happening when invalid end point is provided ')
-
-GlobalVariable.host = 'http://34.31.57.114:8080/'
-
+ 
+GlobalVariable.host = GlobalVariable.temphost

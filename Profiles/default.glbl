@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://34.31.57.114:8080'</initValue>
+      <initValue>'http://34.68.94.248:8080'</initValue>
       <name>host</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['Mobile', 'App', 'Wap', 'Web']</initValue>
+      <initValue>['app', 'wap', 'web']</initValue>
       <name>channel</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -88,5 +88,15 @@
       <description></description>
       <initValue>''</initValue>
       <name>tempCartId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://34.68.94.248:8080'</initValue>
+      <name>temphost</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>deviceId</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

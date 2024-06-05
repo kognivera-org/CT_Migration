@@ -11,23 +11,46 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-//To verify the response of the system when an extra field is passed as part of the  request header
-authResponse = WS.sendRequest(findTestObject('Postman/Postman/Auth', [('host') : GlobalVariable.host]))
 
-if (WS.getResponseStatusCode(authResponse) == 200) {
-    KeywordUtil.markPassed('Validation happened when an extra field is passed as part of the  request header')
-} else {
-    KeywordUtil.markFailed('Validation failed ')
+GlobalVariable.tempbrand = (GlobalVariable.brand[0])
 
-    println('The Response is ')
+println(GlobalVariable.tempbrand)
 
-    println(authResponse.getResponseBodyContent())
+AnonycartResponse = WS.sendRequest(findTestObject('Postman/Postman/CreateAnonyCart'))
+
+AnononymousCartId = WS.getElementPropertyValue(AnonycartResponse, 'id')
+
+GlobalVariable.anony_cartid = AnononymousCartId
+
+println(GlobalVariable.anony_cartid)
+
+GlobalVariable.AAT=""
+
+GlobalVariable.tempbrand = (GlobalVariable.brand[2])
+
+GuestAuthResponse = WS.sendRequest(findTestObject('Postman/Postman/AuthService-Valid Header', [('AAT') : GlobalVariable.AAT
+            , ('host') : GlobalVariable.host]))
+
+WS.verifyResponseStatusCode(GuestAuthResponse, 200, FailureHandling.STOP_ON_FAILURE)
+
+ResponseCartid=WS.getElementPropertyValue(GuestAuthResponse, 'result.anonymousCartId')
+println(ResponseCartid)
+
+if (GlobalVariable.anony_cartid != ResponseCartid || ResponseCartid =="null")
+{
+	println("Cartid is getting displayed for the respective brand")
 }
+else {
+	KeywordUtil.markFailed("Testcase Failed")
+}
+		  	 
+GlobalVariable.anony_cartid="9912a6cf-3166-440d-9ebc-dd4bcaa45039"
+
 

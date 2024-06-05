@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_40_Login_DifferentDeviceId</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>82f18da1-723a-4e4a-9690-7e2dbb3a44f8</testCaseGuid>
+</TestCaseEntity>

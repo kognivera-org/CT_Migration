@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n\&quot;anonymousCartId\&quot; : \&quot;\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n\&quot;anonymousCartId\&quot; : \&quot;${anony_cartid}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -59,7 +59,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://34.31.57.114:8080/session/guest/create</restUrl>
+   <restUrl>${host}/session/guest/create</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -74,6 +74,13 @@
       <id>c2c410d0-2f86-4677-b8a4-63ad8c933d11</id>
       <masked>false</masked>
       <name>host</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.anony_cartid</defaultValue>
+      <description></description>
+      <id>90da9e5e-e389-4ffc-9b0f-a95fa76cd9b6</id>
+      <masked>false</masked>
+      <name>anony_cartid</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

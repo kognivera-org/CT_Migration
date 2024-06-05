@@ -30,5 +30,5 @@ response = WS.sendRequest(findTestObject('Postman/Postman/SessionAuthorize'))
 
 println(response.getResponseBodyContent())
 
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 200)
 

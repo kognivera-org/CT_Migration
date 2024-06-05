@@ -28,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>deviceId</name>
       <type>Main</type>
-      <value>02-128254519</value>
+      <value>${GlobalVariable.tempdeviceId}</value>
       <webElementGuid>0adeec5b-b596-4c39-b4cb-2cbf84ee212c</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -44,14 +44,22 @@
       <matchCondition>equals</matchCondition>
       <name>channel</name>
       <type>Main</type>
-      <value>mobile</value>
+      <value>web</value>
       <webElementGuid>2a9bb6bc-d9a6-4aef-bf94-d308469ee99b</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>correlationId</name>
+      <type>Main</type>
+      <value>0d8b1074-6f95-4366-b1cd-f90abb8a9557</value>
+      <webElementGuid>f5f095e9-5c88-470f-9081-56761ea9c13a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://34.31.57.114:8080/session/guest/create</restUrl>
+   <restUrl>${host}/session/guest/create</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -66,6 +74,13 @@
       <id>b94d3067-c56b-40d3-b510-4fd7519b246c</id>
       <masked>false</masked>
       <name>anony_cartid</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.host</defaultValue>
+      <description></description>
+      <id>a9f8929b-008e-48f3-9575-5d1cde8bd016</id>
+      <masked>false</masked>
+      <name>host</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
