@@ -30,7 +30,7 @@ GlobalVariable.tempdeviceId = DeviceIDVar
 
 println(GlobalVariable.tempdeviceId)
 
-GlobalVariable.tempAat = AATVar
+GlobalVariable.AAT = AATVar
 
 println(GlobalVariable.tempAat)
 

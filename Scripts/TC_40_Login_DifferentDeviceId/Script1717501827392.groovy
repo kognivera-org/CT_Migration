@@ -16,4 +16,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
+authResponse = WS.sendRequest(findTestObject('Postman/Postman/AuthService-Valid Header'))
+
+if (WS.getResponseStatusCode(authResponse) == 200) {
+	KeywordUtil.markPassed("Validated for deviceId "+ GlobalVariable.tempdeviceId)
+	println(authResponse.getResponseBodyContent())
+} else {
+	KeywordUtil.markFailed("Failed to validate")
+	println(authResponse.getResponseBodyContent())
+}
+
+GlobalVariable.tempdeviceId = "05-1518513983"
+
+authResponse = WS.sendRequest(findTestObject('Postman/Postman/AuthService-Valid Header'))
+
+if (WS.getResponseStatusCode(authResponse) == 400) {
+	KeywordUtil.markPassed("Validated for deviceId "+ GlobalVariable.tempdeviceId)
+	println(authResponse.getResponseBodyContent())
+} else {
+	KeywordUtil.markFailed("Failed to validate")
+	println(authResponse.getResponseBodyContent())
+}
+
+GlobalVariable.tempdeviceId = GlobalVariable.deviceId

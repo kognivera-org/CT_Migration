@@ -48,7 +48,7 @@
       <matchCondition>equals</matchCondition>
       <name>AAT</name>
       <type>Main</type>
-      <value>${GlobalVariable.AAT}</value>
+      <value>${GlobalVariable.tempAat}</value>
       <webElementGuid>dbe1311f-3e2e-4114-b744-dd8ca07eaceb</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
@@ -63,7 +63,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${host}/session/authorize</restUrl>
+   <restUrl>http://34.68.94.248:8080/session/authorize</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

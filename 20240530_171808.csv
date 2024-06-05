@@ -1,0 +1,122 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SampleRun,,,,2024-05-30 17:18:26,2024-05-30 17:19:59,1m - 32.213s,FAILED
+,,,,,,,
+Test Cases/TC_LoginCombinationBrandChannel,,To verify the response of the system when valid data is sent in the request header to the auth service,,2024-05-30 17:18:27,2024-05-30 17:18:49,21.713s,PASSED
+,,,,,,,
+Test Cases/TC_01_Login_UserAuth,,,,2024-05-30 17:18:49,2024-05-30 17:18:50,1.219s,PASSED
+,,,,,,,
+Test Cases/Create_Cart,,,,2024-05-30 17:18:50,2024-05-30 17:18:51,1.279s,PASSED
+,,,,,,,
+Test Cases/TC_33_MultisiteWithoutCart,,,,2024-05-30 17:18:51,2024-05-30 17:18:54,2.403s,PASSED
+,,,,,,,
+Test Cases/TC_34_MultisitewithCart,,,,2024-05-30 17:18:54,2024-05-30 17:18:55,1.405s,FAILED
+,,,,,,,
+Test Cases/TC_35_MultisiteCartCheck,,,,2024-05-30 17:18:55,2024-05-30 17:18:57,1.723s,PASSED
+,,,,,,,
+Test Cases/TC_20_Login_InvalidDeviceId,,To verify the response of the system when invalid device id is provided in the header,,2024-05-30 17:18:57,2024-05-30 17:18:58,1.333s,PASSED
+,,,,,,,
+Test Cases/TC_21_Login_invalidCorrelationId,,To verify the response of the system when invalid correlation id is provided in the header,,2024-05-30 17:18:58,2024-05-30 17:19:00,1.487s,PASSED
+,,,,,,,
+Test Cases/TC_22_Login_InvalidAat,,To verify the response of the system when invalid AAT is provided in the header,,2024-05-30 17:19:00,2024-05-30 17:19:01,1.408s,FAILED
+,,,,,,,
+Test Cases/TC_23_Login_InvalidBrand,,To verify the response of the system when invalid brand is provided in the header,,2024-05-30 17:19:01,2024-05-30 17:19:02,1.306s,PASSED
+,,,,,,,
+Test Cases/TC_24_Login_InvalidChannel,,To verify the response of the system when  invalid channel is provided in the header,,2024-05-30 17:19:02,2024-05-30 17:19:04,1.400s,PASSED
+,,,,,,,
+Test Cases/TC_31_Guest_InvalidBody,,To verify the response of the system when invalid body is sent in the request,,2024-05-30 17:19:04,2024-05-30 17:19:05,1.431s,PASSED
+,,,,,,,
+Test Cases/TC_11_LoginDifferntChannels,,,,2024-05-30 17:19:05,2024-05-30 17:19:07,1.787s,PASSED
+,,,,,,,
+Test Cases/TC_11_LoginDifferntChannels,,,,2024-05-30 17:19:07,2024-05-30 17:19:08,0.798s,PASSED
+,,,,,,,
+Test Cases/TC_11_LoginDifferntChannels,,,,2024-05-30 17:19:08,2024-05-30 17:19:09,0.763s,PASSED
+,,,,,,,
+Test Cases/TC_30_Guest_BodyAndHeaderMissing,,,,2024-05-30 17:19:09,2024-05-30 17:19:10,1.456s,PASSED
+,,,,,,,
+Test Cases/TC_30_Guest_BodyAndHeaderMissing,,,,2024-05-30 17:19:10,2024-05-30 17:19:11,0.858s,PASSED
+,,,,,,,
+Test Cases/TC_30_Guest_BodyAndHeaderMissing,,,,2024-05-30 17:19:11,2024-05-30 17:19:12,0.759s,PASSED
+,,,,,,,
+Test Cases/TC_30_Guest_BodyAndHeaderMissing,,,,2024-05-30 17:19:12,2024-05-30 17:19:13,0.733s,PASSED
+,,,,,,,
+Test Cases/TC_30_Guest_BodyAndHeaderMissing,,,,2024-05-30 17:19:13,2024-05-30 17:19:14,0.813s,PASSED
+,,,,,,,
+Test Cases/TC_02_Login_invalidHeaders,,When invalid data is passed in all the headers,,2024-05-30 17:19:14,2024-05-30 17:19:15,1.556s,PASSED
+,,,,,,,
+Test Cases/TC_02_LoginInvalidAat,,,,2024-05-30 17:19:15,2024-05-30 17:19:17,1.248s,PASSED
+,,,,,,,
+Test Cases/TC_02_NewLoginUser_SessionAuth,,,,2024-05-30 17:19:17,2024-05-30 17:19:18,1.160s,FAILED
+,,,,,,,
+Test Cases/TC_03_Login_InvalidDeviceId,,,,2024-05-30 17:19:18,2024-05-30 17:19:19,1.305s,PASSED
+,,,,,,,
+Test Cases/TC_08_Login_invalidEndpoint,,,,2024-05-30 17:19:19,2024-05-30 17:19:21,1.602s,PASSED
+,,,,,,,
+Test Cases/TC_09_Login_ExtraFieldInHeader,,,,2024-05-30 17:19:21,2024-05-30 17:19:22,1.231s,FAILED
+,,,,,,,
+Test Cases/TC_10_Login_AllMandHeaderEmpty,,,,2024-05-30 17:19:22,2024-05-30 17:19:23,1.328s,PASSED
+,,,,,,,
+Test Cases/TC_26_GuestSession,,,,2024-05-30 17:19:23,2024-05-30 17:19:25,1.215s,PASSED
+,,,,,,,
+Test Cases/TC_27_Guest_Create_Invalid_DeviceID,,,,2024-05-30 17:19:25,2024-05-30 17:19:25,0.802s,PASSED
+,,,,,,,
+Test Cases/TC_16_Login_Missing_CorrID,,,,2024-05-30 17:19:25,2024-05-30 17:19:27,1.416s,PASSED
+,,,,,,,
+Test Cases/TC_16_Login_Missing_CorrID,,,,2024-05-30 17:19:27,2024-05-30 17:19:28,0.814s,PASSED
+,,,,,,,
+Test Cases/TC_16_Login_Missing_CorrID,,,,2024-05-30 17:19:28,2024-05-30 17:19:29,0.924s,PASSED
+,,,,,,,
+Test Cases/TC_16_Login_Missing_CorrID,,,,2024-05-30 17:19:29,2024-05-30 17:19:30,0.763s,PASSED
+,,,,,,,
+Test Cases/TC_16_Login_Missing_CorrID,,,,2024-05-30 17:19:30,2024-05-30 17:19:31,1.002s,PASSED
+,,,,,,,
+Test Cases/TC_17_Login_MissingAAT,,,,2024-05-30 17:19:31,2024-05-30 17:19:32,1.607s,PASSED
+,,,,,,,
+Test Cases/TC_17_Login_MissingAAT,,,,2024-05-30 17:19:32,2024-05-30 17:19:33,0.627s,PASSED
+,,,,,,,
+Test Cases/TC_17_Login_MissingAAT,,,,2024-05-30 17:19:33,2024-05-30 17:19:34,0.644s,PASSED
+,,,,,,,
+Test Cases/TC_17_Login_MissingAAT,,,,2024-05-30 17:19:34,2024-05-30 17:19:34,0.631s,PASSED
+,,,,,,,
+Test Cases/TC_17_Login_MissingAAT,,,,2024-05-30 17:19:35,2024-05-30 17:19:35,0.888s,PASSED
+,,,,,,,
+Test Cases/TC_29_Guest_MissingHeader,,,,2024-05-30 17:19:36,2024-05-30 17:19:36,0.894s,PASSED
+,,,,,,,
+Test Cases/TC_29_Guest_MissingHeader,,,,2024-05-30 17:19:37,2024-05-30 17:19:37,0.727s,PASSED
+,,,,,,,
+Test Cases/TC_29_Guest_MissingHeader,,,,2024-05-30 17:19:37,2024-05-30 17:19:38,0.754s,PASSED
+,,,,,,,
+Test Cases/TC_29_Guest_MissingHeader,,,,2024-05-30 17:19:38,2024-05-30 17:19:39,0.681s,PASSED
+,,,,,,,
+Test Cases/TC_29_Guest_MissingHeader,,,,2024-05-30 17:19:39,2024-05-30 17:19:40,0.785s,PASSED
+,,,,,,,
+Test Cases/TC_19_Login_MissingChannel,,,,2024-05-30 17:19:40,2024-05-30 17:19:41,1.152s,PASSED
+,,,,,,,
+Test Cases/TC_19_Login_MissingChannel,,,,2024-05-30 17:19:41,2024-05-30 17:19:42,0.864s,PASSED
+,,,,,,,
+Test Cases/TC_19_Login_MissingChannel,,,,2024-05-30 17:19:42,2024-05-30 17:19:43,0.800s,PASSED
+,,,,,,,
+Test Cases/TC_19_Login_MissingChannel,,,,2024-05-30 17:19:43,2024-05-30 17:19:43,0.816s,PASSED
+,,,,,,,
+Test Cases/TC_19_Login_MissingChannel,,,,2024-05-30 17:19:44,2024-05-30 17:19:44,0.828s,PASSED
+,,,,,,,
+Test Cases/TC_18_Login_MissingBrand,,,,2024-05-30 17:19:44,2024-05-30 17:19:46,1.334s,PASSED
+,,,,,,,
+Test Cases/TC_18_Login_MissingBrand,,,,2024-05-30 17:19:46,2024-05-30 17:19:47,0.895s,PASSED
+,,,,,,,
+Test Cases/TC_18_Login_MissingBrand,,,,2024-05-30 17:19:47,2024-05-30 17:19:48,0.879s,PASSED
+,,,,,,,
+Test Cases/TC_18_Login_MissingBrand,,,,2024-05-30 17:19:48,2024-05-30 17:19:49,0.801s,PASSED
+,,,,,,,
+Test Cases/TC_18_Login_MissingBrand,,,,2024-05-30 17:19:49,2024-05-30 17:19:49,0.708s,PASSED
+,,,,,,,
+Test Cases/TC_28_Guest_MissingBody,,,,2024-05-30 17:19:49,2024-05-30 17:19:50,0.937s,PASSED
+,,,,,,,
+Test Cases/TC_15_Login_MissingDeviceID,,,,2024-05-30 17:19:50,2024-05-30 17:19:52,1.761s,PASSED
+,,,,,,,
+Test Cases/TC_15_Login_MissingDeviceID,,,,2024-05-30 17:19:52,2024-05-30 17:19:53,0.806s,PASSED
+,,,,,,,
+Test Cases/TC_15_Login_MissingDeviceID,,,,2024-05-30 17:19:53,2024-05-30 17:19:54,0.855s,PASSED
+,,,,,,,
+Test Cases/TC_15_Login_MissingDeviceID,,,,2024-05-30 17:19:54,2024-05-30 17:19:55,0.857s,PASSED
+,,,,,,,
+Test Cases/TC_15_Login_MissingDeviceID,,,,2024-05-30 17:19:55,2024-05-30 17:19:56,1.026s,PASSED

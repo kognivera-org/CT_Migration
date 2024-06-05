@@ -19,6 +19,13 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 GlobalVariable.AAT = 'gfcvnbbnbh-vghv'
+GlobalVariable.tempdeviceId = '02-128254519'
+
+GlobalVariable.tempbrand = 'LP'
+
+GlobalVariable.tempchannel = 'web'
+
+GlobalVariable.tempCid ='0d8b1074-6f95-4366-b1cd-f90abb8a9557'
 
 accessRes = WS.sendRequest(findTestObject('Postman/Postman/Auth'))
 
